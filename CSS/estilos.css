@@ -1,0 +1,138 @@
+/* Tipos de redes de comunicaciones: estilo minimalista */
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #293542;
+  background-color: #ffffff;
+  margin: 0;
+}
+.portada img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 0 6px #2e8b57;
+  .portada { text-align: center; }
+.portada img { margin: 0 auto; }
+}
+article {
+  padding: 20px 24px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-left-width: 4px;     /* conserva la línea lateral */
+  border-radius: 10px;
+}
+.siglas { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 8px; }
+.siglas li { margin: 0; }
+
+.siglas a {
+  display: block;
+  padding: 4px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;       /* un número enorme = bordes totalmente redondos */
+}
+
+.siglas a:hover, .siglas a:focus {
+  background-color: #fe4444;
+  color: #b3261e;             /* usa el mismo rojo de tu body */
+}
+summary {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid #c53636;
+  border-radius: 999px;
+  cursor: pointer;
+  list-style: none;                       /* quita el triángulo */
+}
+summary::-webkit-details-marker { display: none; }   /* Safari */
+
+summary::after { content: "+"; margin-left: 8px; }
+details[open] summary::after { content: "\2212"; }   /* el signo menos */
+
+summary:hover { background-color: rgba(255, 255, 255, 0.15); }
+summary:focus-visible { outline: 2px solid #d06262; outline-offset: 3px; }
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-top: 8px;
+  background-color: #b64040;
+}
+.tabla { border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; }
+thead th { background-color: rgba(255, 255, 255, 0.12); }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+
+video { background-color: #000000; border-radius: 10px; }
+
+footer { text-align: center; }
+
+/* Contenedor central */
+header, main, footer { max-width: 720px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+
+/* Encabezados */
+header { padding-top: 56px; padding-bottom: 28px; }
+h1 { font-size: 2.4em; line-height: 1.15; margin: 16px 0 8px; }
+h2 { font-size: 1.6em; line-height: 1.25; margin: 0 0 12px; }
+h3 { font-size: 1.2em; margin: 0 0 8px; }
+h3 span { font-weight: normal; color: #5f6b76; margin-left: 6px; }
+.subtitulo { color: #5f6b76; margin: 0; }
+
+/* Enlaces */
+a { color: #000000; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover, a:focus { border-bottom-color: #000000; }
+a:focus-visible { outline: 2px solid #000000; outline-offset: 3px; }
+
+/* Menú fijo */
+nav { position: sticky; top: 0; background-color: #d34e4e; border-top: 1px solid #e4e7eb; border-bottom: 1px solid #e4e7eb; z-index: 10; }
+nav ul { max-width: 720px; margin: 0 auto; padding: 14px 24px; list-style: none; }
+nav li { display: inline; margin-right: 22px; }
+nav a.activo { border-bottom-color: #000000; }
+
+/* Secciones */
+section { padding-top: 48px; scroll-margin-top: 48px; }
+.siglas { list-style: none; margin: 16px 0 0; padding: 0; }
+.siglas li { display: inline; margin-right: 16px; font-weight: bold; }
+
+/* Cada tipo de red */
+article { margin: 28px 0; padding-left: 20px; border-left: 3px solid #e4e7eb; scroll-margin-top: 64px; }
+article:target { border-left-color: #000000; }
+article p { margin: 0 0 8px; }
+summary { color: #000000; cursor: pointer; }
+details p { margin-top: 8px; color: #5f6b76; }
+
+/* Tabla */
+.tabla { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e4e7eb; vertical-align: top; }
+thead th { border-bottom: 2px solid #1f2933; }
+tbody tr:hover { background-color: #8c311a6a; }
+
+/* Internet y web */
+dt { font-weight: bold; margin-top: 12px; }
+dd { margin: 0 0 8px 0; }
+ol { padding-left: 20px; }
+
+/* Video */
+figure { margin: 0; }
+video { display: block; width: 100%; height: auto; background-color: #f5f7fa; }
+figcaption { font-size: 0.85em; color: #5f6b76; margin-top: 8px; }
+
+/* Pie */
+footer { margin-top: 56px; padding-top: 24px; padding-bottom: 56px; border-top: 1px solid #e4e7eb; font-size: 0.85em; color: #5f6b76; }
+footer p { margin: 0 0 6px; }
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  header { padding-top: 32px; }
+  h1 { font-size: 1.9em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

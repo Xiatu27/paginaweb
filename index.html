@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tipos de redes de comunicaciones</title>
+  <meta name="description" content="Guía básica de los 8 tipos de redes: LAN, WLAN, VLAN, MAN, WAN, PAN, SAN y CAN.">
+  <link rel="icon" href="IMAGENES/red.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <header id="inicio">
+    
+    <h1>Tipos de redes de comunicaciones</h1>
+    
+  </header>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="#tipos">Tipos</a></li>
+      <li><a href="#comparativa">Comparativa</a></li>
+      <li><a href="#internet-web">Internet y web</a></li>
+      <li><a href="#video">Video Explicativo</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="tipos">
+      <h2>Los 8 tipos principales</h2>
+      <p>Cada tipo de red tiene características físicas y lógicas distintas que permiten conectar varios nodos. Se diferencian sobre todo por su alcance y por la tecnología que usan.</p>
+      <figure class="portada">
+    <img src="IMAGENES/Redes.png"
+         alt="Ilustración de computadoras, teléfonos y servidores conectados alrededor de un globo terráqueo."
+         width="550" height="413">
+    <figcaption>Dispositivos conectados en una red.</figcaption>
+  </figure>
+      <ul class="siglas">
+        <li><a href="#lan">LAN</a></li>
+        <li><a href="#wlan">WLAN</a></li>
+        <li><a href="#vlan">VLAN</a></li>
+        <li><a href="#man">MAN</a></li>
+        <li><a href="#wan">WAN</a></li>
+        <li><a href="#pan">PAN</a></li>
+        <li><a href="#san">SAN</a></li>
+        <li><a href="#can">CAN</a></li>
+      </ul>
+
+      <article id="lan">
+        <h3>LAN <span>Red de área local</span></h3>
+        <p>Red de corto alcance que conecta nodos dentro de una misma ubicación física, como una casa, un departamento, un local o un área de trabajo. Sus nodos comparten recursos, como una impresora, mediante el modelo cliente-servidor.</p>
+        <details>
+          <summary>Ver ejemplo</summary>
+          <p>Una impresora, un servidor y varias estaciones de trabajo conectados entre sí en una oficina.</p>
+          <figure>
+      <img src="IMAGENES/LAN.Png"
+           alt="Diagrama de una red LAN: impresora, servidor, cliente y estaciones de trabajo conectados entre sí."
+           width="400" height="190">
+      <figcaption>Diagrama de una red LAN.</figcaption>
+    </figure>
+  </details>
+</article>
+
+      <article id="wlan">
+        <h3>WLAN <span>Red de área local inalámbrica</span></h3>
+        <p>Es la variante inalámbrica de la LAN: no usa medios físicos de conexión, sino tecnología Wi-Fi. Un router inalámbrico mantiene conectados todos los nodos.</p>
+        <details>
+          <summary>Ver ejemplo</summary>
+          <p>Estaciones de trabajo e impresora conectadas por Wi-Fi a un router inalámbrico.</p>
+          <figure>
+      <img src="IMAGENES/WLAN.Png"
+           alt="Diagrama de una red WLAN: impresora, servidor, cliente y estaciones de trabajo conectados entre sí."
+           width="400" height="200">
+      <figcaption>Diagrama de una red WLAN.</figcaption>
+    </figure>
+  </details>
+</article>
+
+      <article id="vlan">
+        <h3>VLAN <span>Red de área local virtual</span></h3>
+        <p>Divide una red LAN en segmentos lógicos independientes sin necesidad de hardware adicional. Se configura en los puertos del switch. Reduce el tamaño del dominio de difusión y facilita la administración de la red.</p>
+        <details>
+          <summary>Ver ejemplo</summary>
+          <p>Una empresa separa a Jefaturas (VLAN 10, puertos f0/0-10) de Capital Humano (VLAN 20, puertos f0/11-20) para que sus datos no se mezclen.</p>
+          <figure>
+      <img src="IMAGENES/VLAN.Png"
+           alt="Diagrama de una red VLAN: dos grupos de estaciones de trabajo conectadas a un switch, cada grupo en su propia VLAN."
+           width="400" height="200">
+      <figcaption>Diagrama de una red VLAN.</figcaption>
+    </figure>
+  </details>
+</article>
+
+      <article id="man">
+        <h3>MAN <span>Red de área metropolitana</span></h3>
+        <p>Tiene mayor alcance que una red local: cubre hasta 10 kilómetros o más, como una ciudad, un municipio o una alcaldía. Conecta varias redes LAN, WLAN o VLAN ubicadas en distintos puntos de una misma área metropolitana.</p>
+        <details>
+          <summary>Ver ejemplo</summary>
+          <p>Las redes locales de Azcapotzalco, Iztapalapa y Gustavo A. Madero conectadas con una oficina central. También se usa para unir edificios gubernamentales, sucursales o centros educativos.</p>
+          <figure>
+      <img src="IMAGENES/MAN.Png"
+           alt="Diagrama de una red MAN: tres redes LAN conectadas a través de una red de área metropolitana."
+           width="400" height="200">
+      <figcaption>Diagrama de una red MAN.</figcaption>
+    </figure>
+        </details>
+      </article>
+
+      <article id="wan">
+        <h3>WAN <span>Red de área amplia</span></h3>
+        <p>Conecta dispositivos o redes a grandes distancias, típicamente desde 100 km hasta miles de kilómetros, e incluso entre regiones, países o continentes. Suelen implementarla grandes organizaciones, gobiernos o proveedores de servicios.</p>
+        <details>
+          <summary>Ver ejemplo</summary>
+          <p>Una empresa como Samsung conecta sus sedes de México, Estados Unidos y Corea. Servicios globales como el correo corporativo, la nube o internet también funcionan sobre redes WAN.</p>
+          <figure>  
+    <img src="IMAGENES/WAN.Png"
+           alt="Diagrama de una red WAN: tres redes LAN conectadas a través de una red de área amplia."
+           width="400" height="200">
+    <figcaption>Diagrama de una red WAN.</figcaption>
+          </figure>
+        </details>
+      </article>
+
+      <article id="pan">
+        <h3>PAN <span>Red de área personal</span></h3>
+        <p>Conecta dispositivos muy cercanos entre sí, normalmente en un rango de 1 a 10 metros. Se conecta con tecnologías inalámbricas de corto alcance: Bluetooth, NFC o infrarrojo.</p>
+        <details>
+          <summary>Ver ejemplo</summary>
+          <p>Un smartphone conectado a audífonos Bluetooth, a un reloj inteligente o a una tablet.</p>
+          <figure>
+      <img src="IMAGENES/PAN.Png"
+           alt="Diagrama de una red PAN: smartphone, audífonos Bluetooth, reloj inteligente y tablet conectados entre sí."
+           width="400" height="200">
+      <figcaption>Diagrama de una red PAN.</figcaption>
+    </figure>
+        </details>
+      </article>
+
+      <article id="san">
+        <h3>SAN <span>Red de área de almacenamiento</span></h3>
+        <p>Conecta servidores con dispositivos de almacenamiento, como matrices de discos, cabinas o librerías de respaldo, mediante una infraestructura de alta velocidad basada en fibra óptica o Fibre Channel. El tráfico de almacenamiento va separado del tráfico de usuarios y aplicaciones.</p>
+        <details>
+          <summary>Ver ejemplo</summary>
+          <p>Dos servidores, cada uno con su HBA (Host Bus Adapter), conectados por un switch Fibre Channel a un mismo almacenamiento.</p>
+          <figure>
+      <img src="IMAGENES/SAN.Png"
+           alt="Diagrama de una red SAN: dos servidores conectados a un almacenamiento mediante un switch Fibre Channel."
+           width="400" height="200">
+      <figcaption>Diagrama de una red SAN.</figcaption>
+    </figure>
+        </details>
+      </article>
+
+      <article id="can">
+        <h3>CAN <span>Red de área de campus</span></h3>
+        <p>Reúne varias redes LAN interconectadas dentro de un mismo entorno, como una universidad, un instituto, una base militar o un parque tecnológico. Tiene más alcance que una LAN, pero no llega al de una MAN. A veces se considera un subtipo de MAN.</p>
+        <details>
+          <summary>Ver ejemplo</summary>
+          <p>Varias escuelas de cómputo de nivel superior conectadas a la CAN del IPN mediante un enlace troncal.</p>
+          <figure>
+      <img src="IMAGENES/CAN.Png" 
+           alt="Diagrama de una red CAN: varias redes LAN conectadas a través de un enlace troncal."
+           width="400" height="200">
+      <figcaption>Diagrama de una red CAN.</figcaption>
+        </details>
+      </article>
+    </section>
+
+    <section id="comparativa">
+      <h2>Comparativa</h2>
+      <div class="tabla">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Red</th>
+              <th scope="col">Alcance</th>
+              <th scope="col">Tecnología</th>
+              <th scope="col">Uso típico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row"><a href="#lan">LAN</a></th><td>Una misma ubicación</td><td>Medios físicos</td><td>Compartir una impresora</td></tr>
+            <tr><th scope="row"><a href="#wlan">WLAN</a></th><td>Una misma ubicación</td><td>Wi-Fi</td><td>Red local sin cables</td></tr>
+            <tr><th scope="row"><a href="#vlan">VLAN</a></th><td>Dentro de una LAN</td><td>Puertos del switch</td><td>Separar departamentos</td></tr>
+            <tr><th scope="row"><a href="#man">MAN</a></th><td>Hasta 10 km o más</td><td>Varias LAN conectadas</td><td>Sucursales de una ciudad</td></tr>
+            <tr><th scope="row"><a href="#wan">WAN</a></th><td>Desde 100 km</td><td>Proveedores de servicios</td><td>Sedes en varios países</td></tr>
+            <tr><th scope="row"><a href="#pan">PAN</a></th><td>1 a 10 m</td><td>Bluetooth, NFC, infrarrojo</td><td>Dispositivos personales</td></tr>
+            <tr><th scope="row"><a href="#san">SAN</a></th><td>Servidores y almacenamiento</td><td>Fibre Channel, fibra óptica</td><td>Acceso rápido a grandes datos</td></tr>
+            <tr><th scope="row"><a href="#can">CAN</a></th><td>Un campus o institución</td><td>LAN interconectadas</td><td>Universidades e institutos</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="internet-web">
+      <h2>¿Internet y web son lo mismo?</h2>
+      <p>No. Son dos cosas distintas.</p>
+      <dl>
+        <dt>Internet</dt>
+        <dd>La interconexión de dispositivos, locales o en cualquier parte del mundo, para intercambiar datos o información.</dd>
+        <dt>Web (World Wide Web)</dt>
+        <dd>Los sitios y páginas codificados que cualquier persona con un navegador puede interpretar e interactuar con sus elementos.</dd>
+      </dl>
+      <p>Tim Berners-Lee, trabajador del CERN y precursor de la web, diseñó dos de sus pilares:</p>
+      <ol>
+        <li><abbr title="Uniform Resource Locator">URL</abbr>: localizador de recursos uniforme.</li>
+        <li><abbr title="HyperText Markup Language">HTML</abbr>: lenguaje de marcas de hipertexto.</li>
+      </ol>
+    </section>
+
+    <section id="video">
+      <h2>Video</h2>
+      <figure>
+        <!-- Coloca tu archivo en VIDEOS/redes.mp4 -->
+        <video controls preload="metadata">
+          <source src="VIDEOS/videoyt.mp4" type="video/mp4">
+          <p>Tu navegador no admite video HTML5.</p>
+        </video>
+        <figcaption>Video de apoyo sobre los tipos de redes.</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Basado en el material de la Mtra. Ericka Zavala, licencia CC BY-NC-ND 4.0.</p>
+    <p><a href="#inicio">Volver arriba</a> &nbsp; © <span id="anio">2026</span></p>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
